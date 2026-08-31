@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { HughesLogotype } from "../components/hughes-logotype";
 
 const pairs = [
   ["01", "The pitch", "The MD intercepts a hideous TV proposal and sends it to marketing with one note: we need more publicity."],
@@ -10,7 +11,7 @@ export default function Home() {
   return (
     <main>
       <header className="site-header shell">
-        <Link className="wordmark" href="/">HUGHES / STRESS BUSTERS</Link>
+        <Link className="wordmark" href="/"><HughesLogotype className="site-logo" /><span>/ STRESS BUSTERS</span></Link>
         <nav aria-label="Primary navigation">
           <Link href="#how-it-works">How it works</Link>
           <Link href="/collateral">Collateral <span className="arrow">↗</span></Link>
@@ -35,7 +36,7 @@ export default function Home() {
 
       <section className="section shell pair-section"><div className="section-heading"><p className="eyebrow">02 / A few situations</p><p className="muted">The cards are blank until the trouble arrives.</p></div><div className="pair-grid">{pairs.map(([number, title, body]) => <article className="pair-card" key={number}><div className="card-top"><span>{number}</span><span>STRESS CARD</span></div><h3>{title}</h3><p>{body}</p><div className="card-mark">H / SB</div></article>)}</div></section>
 
-      <footer className="footer shell"><p>HUGHES [BRAND] / STRESS BUSTERS</p><Link href="/collateral">View collateral ↗</Link><p className="muted">Made for the moment after “I have an idea.”</p></footer>
+      <footer className="footer shell"><p><HughesLogotype className="footer-logo" /><span>/ STRESS BUSTERS</span></p><Link href="/collateral">View collateral ↗</Link><p className="muted">Made for the moment after “I have an idea.”</p></footer>
     </main>
   );
 }
