@@ -1,5 +1,5 @@
 .mockup-stress .mockup-number{margin-top:18px}
-.mockup-stress .card-logo{width:78%;align-self:flex-start;margin-left:-4px}
+.mockup-stress .card-logo{width:100%;align-self:flex-start;margin-left:-18%;}
 .mockup-stress h2{font-size:clamp(23px,3.2vw,48px);margin:auto 0 0;line-height:.88}
 .card-illustration{width:100%;aspect-ratio:1/1;object-fit:cover;flex:1 1 auto;min-height:0;margin:12px 0;mix-blend-mode:screen;border-radius:3px}
 .mockup-stress .mockup-footer{margin-top:0}
