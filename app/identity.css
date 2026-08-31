@@ -1,15 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
-
 .wordmark{display:flex;align-items:center;gap:9px}
-.site-logo{width:74px;height:38px;overflow:visible}
-.footer-logo{width:74px;height:34px;vertical-align:middle;overflow:visible}
+.site-logo{width:70px;height:36px;overflow:visible}
+.footer-logo{width:70px;height:32px;vertical-align:middle;overflow:visible}
 .footer>p:first-child{display:flex;align-items:center;gap:9px}
-.hughes-text{font-family:'Carter One', 'Arial Rounded MT Bold', Arial, sans-serif;font-size:160px;text-anchor:middle;dominant-baseline:central;letter-spacing:4px}
-.hughes-shadow{fill:#1e88e5;stroke:#1e88e5;stroke-width:50px;stroke-linejoin:round;stroke-linecap:round;transform:translate(16px,16px)}
-.hughes-outline{fill:#fff9c4;stroke:#fff9c4;stroke-width:36px;stroke-linejoin:round;stroke-linecap:round}
-.hughes-fill{fill:#e53935}
-.hughes-inner{fill:none;stroke:#ff8a80;stroke-width:4px;transform:translate(-3px,-3px)}
-.hughes-spark{fill:#fbc02d}
-.card-logo{width:100%;height:36px;display:block;overflow:visible}
-
-@media(max-width:700px){.site-logo{width:62px;height:32px}.wordmark{gap:6px}.card-logo{height:28px}.footer-logo{width:62px;height:30px}}
+.hughes-text{font-family:'Carter One','Arial Rounded MT Bold',Arial,sans-serif;font-size:160px;text-anchor:middle;dominant-baseline:central;letter-spacing:4px}
+.hughes-shadow{fill:#b400ff;stroke:#b400ff;stroke-width:50px;stroke-linejoin:round;stroke-linecap:round;transform:translate(14px,14px)}
+.hughes-outline{fill:#00e5ff;stroke:#00e5ff;stroke-width:36px;stroke-linejoin:round;stroke-linecap:round}
+.hughes-fill{fill:#ffffff}
+.hughes-inner{fill:none;stroke:#b400ff;stroke-width:4px;transform:translate(-3px,-3px)}
+.hughes-spark{fill:#00e5ff}
+.card-logo{width:100%;height:34px;display:block;overflow:visible}
+@media(max-width:700px){.site-logo{width:58px;height:30px}.wordmark{gap:6px}.card-logo{height:26px}.footer-logo{width:58px;height:28px}}

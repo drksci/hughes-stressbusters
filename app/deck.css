@@ -1,1 +1,46 @@
-.deck-page{background:#fffdf8}.deck-intro{padding:80px 0 46px}.deck-intro h1{font-size:clamp(54px,9vw,120px);letter-spacing:-.08em;line-height:.88;margin:0}.deck-intro h1 span{color:#e34d32}.deck-intro>p:not(.eyebrow){max-width:470px;font-size:20px;line-height:1.25;margin:32px 0 0}.deck-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;padding-bottom:100px}.deck-tile{aspect-ratio:7/10;border-radius:13px;padding:12px;display:flex;flex-direction:column;color:#fff;background-size:cover,500% auto;background-position:center,0 center;box-shadow:0 10px 25px #433b2c1c}.deck-tile>div{display:flex;justify-content:space-between;font:9px var(--mono);text-transform:uppercase}.deck-tile h2{color:#fff;font-size:clamp(18px,2vw,30px);line-height:.9;margin:auto 0 0;letter-spacing:-.06em}.art-0,.art-5,.art-10{background-image:linear-gradient(180deg,#00000008,#000000aa),url('/deck-art-01.png')}.art-1,.art-6,.art-11{background-image:linear-gradient(180deg,#00000008,#000000aa),url('/deck-art-02.png')}.art-2,.art-7,.art-12{background-image:linear-gradient(180deg,#00000008,#000000aa),url('/deck-art-03.png')}.art-3,.art-8,.art-13{background-image:linear-gradient(180deg,#00000008,#000000aa),url('/deck-art-01.png')}.art-4,.art-9,.art-14{background-image:linear-gradient(180deg,#00000008,#000000aa),url('/deck-art-02.png')}.art-0,.art-5,.art-10{background-position:center,0% center}.art-1,.art-6,.art-11{background-position:center,25% center}.art-2,.art-7,.art-12{background-position:center,50% center}.art-3,.art-8,.art-13{background-position:center,75% center}.art-4,.art-9,.art-14{background-position:center,100% center}@media(max-width:700px){.deck-intro{padding:70px 0 40px}.deck-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding-bottom:70px}.deck-tile{padding:10px}.deck-tile h2{font-size:24px}}
+/* ── Deck page ── */
+.deck-page{background:var(--bg)}
+.deck-intro{padding:clamp(60px,9vw,110px) 0 clamp(36px,5vw,60px);border-bottom:1px solid var(--line)}
+.deck-intro .eyebrow{color:var(--cyan)}
+.deck-intro h1{font-size:clamp(52px,9vw,118px);letter-spacing:-.08em;line-height:.88;margin:14px 0 0;color:#fff}
+.deck-intro h1 em{font-style:normal;color:var(--purple)}
+.deck-intro>p:not(.eyebrow){max-width:460px;font-size:18px;line-height:1.4;margin:24px 0 0;color:#aaa}
+
+/* Grid */
+.deck-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:2px;padding-bottom:2px}
+
+/* Tiles */
+.deck-tile{aspect-ratio:7/10;padding:14px;display:flex;flex-direction:column;color:#fff;background-size:cover;background-position:center;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.deck-tile:hover{transform:translateY(-4px) scale(1.02);z-index:2;box-shadow:0 0 40px rgba(180,0,255,.4)}
+.deck-tile>div{display:flex;justify-content:space-between;font:9px var(--mono);text-transform:uppercase;position:relative;z-index:1}
+.deck-tile>div span{letter-spacing:.1em}
+.deck-tile>div small{color:rgba(255,255,255,.5)}
+.deck-tile h2{color:#fff;font-size:clamp(15px,1.8vw,26px);line-height:.92;margin:auto 0 0;letter-spacing:-.05em;position:relative;z-index:1}
+
+/* STRESS tiles — purple art */
+.tile-stress{background-image:
+  linear-gradient(180deg, rgba(10,0,20,.05) 0%, rgba(80,0,160,.75) 60%, rgba(120,0,220,.95) 100%),
+  url('/art-stress.jpg')}
+.tile-stress>div span{color:#d580ff}
+
+/* BUSTER tiles — cyan art */
+.tile-buster{background-image:
+  linear-gradient(180deg, rgba(0,10,20,.05) 0%, rgba(0,100,150,.75) 60%, rgba(0,160,200,.95) 100%),
+  url('/art-iscream.jpg')}
+.tile-buster>div span{color:#7fffff}
+
+/* WILD tile — both */
+.tile-wild{background-image:
+  linear-gradient(135deg, rgba(180,0,255,.85) 0%, rgba(0,0,0,.5) 50%, rgba(0,229,255,.85) 100%),
+  url('/stress-busters-illustration.png')}
+.tile-wild>div span{color:#fff;font-weight:700}
+.tile-wild h2{color:#fff}
+
+@media(max-width:900px){.deck-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:700px){
+  .deck-intro{padding:clamp(50px,8vw,80px) 0 clamp(28px,4vw,48px)}
+  .deck-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:2px;padding-bottom:40px}
+  .deck-tile{padding:10px}
+  .deck-tile h2{font-size:clamp(14px,5.5vw,22px)}
+  .deck-tile>div{font-size:7px}
+}
