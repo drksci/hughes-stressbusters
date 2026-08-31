@@ -10,5 +10,5 @@ const tree = {
 };
 
 export default function CollateralLayout({ children }: { children: ReactNode }) {
-  return <DocsLayout tree={tree} nav={{ title: "HUGHES / SB" }}>{children}</DocsLayout>;
+  return <DocsLayout tree={tree as any} nav={{ title: "HUGHES / SB" }}>{children}</DocsLayout>;
 }
