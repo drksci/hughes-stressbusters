@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Caveat:wght@400;600&display=swap');
 .wordmark{display:flex;align-items:center;gap:9px}
-.site-logo{width:70px;height:36px;overflow:visible}
+.site-logo{width:80px;height:32px;overflow:visible;display:block;flex-shrink:0}
 .footer-logo{width:70px;height:32px;vertical-align:middle;overflow:visible}
 .footer>p:first-child{display:flex;align-items:center;gap:9px}
 .hughes-text{font-family:'Carter One','Arial Rounded MT Bold',Arial,sans-serif;font-size:160px;text-anchor:middle;dominant-baseline:central;letter-spacing:4px}

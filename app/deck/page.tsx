@@ -47,16 +47,14 @@ export default function DeckPage() {
         <p>12 stresses. 12 rescues. One wildcard. No correct strategy — just the satisfying thud of a perfect match.</p>
       </section>
 
-      <section className="deck-grid" aria-label="All 25 cards">
+      <section className="deck-grid shell" aria-label="All 25 cards">
         {cards.map(([kind, title, num]) => (
-          <article
-            className={`deck-tile tile-${kind.toLowerCase()}`}
-            key={title}
-          >
+          <article className={`deck-tile tile-${kind.toLowerCase()}`} key={title}>
             <div>
               <span>{kind}</span>
               <small>{num}</small>
             </div>
+            <div className="card-art" aria-hidden="true" />
             <h2>{title}</h2>
           </article>
         ))}

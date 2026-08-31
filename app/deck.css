@@ -1,46 +1,93 @@
 /* ── Deck page ── */
 .deck-page{background:#fff}
-.deck-intro{padding:clamp(60px,9vw,110px) 0 clamp(36px,5vw,60px);border-bottom:1px solid var(--line)}
+.deck-intro{padding:clamp(60px,9vw,110px) 0 clamp(36px,5vw,60px);border-bottom:1px solid #ebebeb}
 .deck-intro .eyebrow{color:#888}
 .deck-intro h1{font-size:clamp(52px,9vw,118px);letter-spacing:-.08em;line-height:.88;margin:14px 0 0;color:#111}
 .deck-intro h1 em{font-style:normal;color:var(--purple)}
-.deck-intro>p:not(.eyebrow){max-width:460px;font-size:18px;line-height:1.4;margin:24px 0 0;color:#555}
+.deck-intro>p:not(.eyebrow){max-width:460px;font-size:18px;line-height:1.5;margin:24px 0 0;color:#555}
 
 /* Grid */
-.deck-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:2px;padding-bottom:2px}
+.deck-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;padding:clamp(32px,5vw,60px) 0 clamp(60px,8vw,100px)}
 
-/* Tiles */
-.deck-tile{aspect-ratio:7/10;padding:14px;display:flex;flex-direction:column;color:#fff;background-size:cover;background-position:center;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s}
-.deck-tile:hover{transform:translateY(-4px) scale(1.02);z-index:2;box-shadow:0 8px 40px rgba(0,0,0,.25)}
-.deck-tile>div{display:flex;justify-content:space-between;font:9px var(--mono);text-transform:uppercase;position:relative;z-index:1}
-.deck-tile>div span{letter-spacing:.1em}
-.deck-tile>div small{color:rgba(255,255,255,.5)}
-.deck-tile h2{color:#fff;font-size:clamp(15px,1.8vw,26px);line-height:.92;margin:auto 0 0;letter-spacing:-.05em;position:relative;z-index:1}
+/* Base tile — actual card proportions */
+.deck-tile{
+  aspect-ratio:7/12;
+  border-radius:12px;
+  padding:14px 12px 12px;
+  display:flex;
+  flex-direction:column;
+  transition:transform .18s,box-shadow .18s;
+  cursor:default;
+}
+.deck-tile:hover{transform:translateY(-5px) scale(1.02);z-index:2;box-shadow:0 12px 32px rgba(0,0,0,.13)}
 
-/* STRESS tiles — purple art */
-.tile-stress{background-image:
-  linear-gradient(180deg, rgba(10,0,20,.05) 0%, rgba(80,0,160,.75) 60%, rgba(120,0,220,.95) 100%),
-  url('/art-stress.jpg')}
-.tile-stress>div span{color:#d580ff}
+/* Type + number row */
+.deck-tile>div{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font:700 9px var(--mono);
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  flex-shrink:0;
+}
+.deck-tile>div small{font-weight:400;font-size:8px}
 
-/* BUSTER tiles — cyan art */
-.tile-buster{background-image:
-  linear-gradient(180deg, rgba(0,10,20,.05) 0%, rgba(0,100,150,.75) 60%, rgba(0,160,200,.95) 100%),
-  url('/art-iscream.jpg')}
-.tile-buster>div span{color:#7fffff}
+/* Art zone */
+.deck-tile .card-art{
+  flex:1;
+  margin:10px -12px;
+  overflow:hidden;
+}
 
-/* WILD tile — both */
-.tile-wild{background-image:
-  linear-gradient(135deg, rgba(180,0,255,.85) 0%, rgba(0,0,0,.5) 50%, rgba(0,229,255,.85) 100%),
-  url('/stress-busters-illustration.png')}
-.tile-wild>div span{color:#fff;font-weight:700}
+/* Card title */
+.deck-tile h2{
+  font-size:clamp(12px,1.5vw,20px);
+  line-height:.95;
+  margin:10px 0 0;
+  letter-spacing:-.04em;
+  flex-shrink:0;
+}
+
+/* STRESS tiles — dark card */
+.tile-stress{
+  background:#111;
+  color:#fff;
+  box-shadow:0 2px 8px rgba(0,0,0,.2);
+}
+.tile-stress>div span{color:rgba(180,0,255,.75)}
+.tile-stress>div small{color:rgba(255,255,255,.3)}
+.tile-stress h2{color:#fff}
+.tile-stress .card-art{background:#1a001f}
+
+/* BUSTER tiles — white card */
+.tile-buster{
+  background:#fff;
+  color:#111;
+  border:1px solid #ebebeb;
+  box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+.tile-buster>div span{color:#00909e}
+.tile-buster>div small{color:#bbb}
+.tile-buster h2{color:#111}
+.tile-buster .card-art{background:#e8fffe}
+
+/* WILD tile */
+.tile-wild{
+  background:#b400ff;
+  color:#fff;
+  box-shadow:0 2px 12px rgba(180,0,255,.25);
+}
+.tile-wild>div span{color:rgba(255,255,255,.7)}
+.tile-wild>div small{color:rgba(255,255,255,.5)}
 .tile-wild h2{color:#fff}
+.tile-wild .card-art{background:rgba(0,0,0,.15)}
 
 @media(max-width:900px){.deck-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-width:700px){
-  .deck-intro{padding:clamp(50px,8vw,80px) 0 clamp(28px,4vw,48px)}
-  .deck-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:2px;padding-bottom:40px}
-  .deck-tile{padding:10px}
-  .deck-tile h2{font-size:clamp(14px,5.5vw,22px)}
+  .deck-intro{padding:clamp(50px,8vw,80px) 0 clamp(24px,4vw,40px)}
+  .deck-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding-bottom:60px}
+  .deck-tile{padding:10px 9px 9px;border-radius:9px}
+  .deck-tile h2{font-size:clamp(11px,4vw,17px)}
   .deck-tile>div{font-size:7px}
 }
