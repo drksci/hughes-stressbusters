@@ -1,5 +1,5 @@
 .mockup-stress .mockup-number{margin-top:18px}
-.mockup-stress .card-logo{width:100%;align-self:flex-start;margin-left:-18%;}
+.mockup-stress .card-logo{width:100%;align-self:flex-start;margin-left:0}
 .mockup-stress h2{font-size:clamp(23px,3.2vw,48px);margin:auto 0 0;line-height:.88}
 .card-illustration{width:100%;aspect-ratio:1/1;object-fit:cover;flex:1 1 auto;min-height:0;margin:12px 0;mix-blend-mode:screen;border-radius:3px}
 .mockup-stress .mockup-footer{margin-top:0}
@@ -7,3 +7,8 @@
 .mockup-stress > :not(.card-illustration){position:relative;z-index:1}
 .mockup-stress .card-illustration{position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover;margin:0;opacity:.72}
 .card-two-illustration{width:100%;flex:1 1 auto;min-height:0;object-fit:cover;margin:16px 0 12px;border-radius:3px}
+.mockup-buster{position:relative;overflow:hidden;color:#fff}
+.mockup-buster > :not(.card-two-illustration){position:relative;z-index:1}
+.mockup-buster .card-two-illustration{position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover;margin:0;opacity:.82}
+.mockup-buster .mockup-label,.mockup-buster .mockup-footer{color:#fff}
+.mockup-buster h2{color:#fff}
