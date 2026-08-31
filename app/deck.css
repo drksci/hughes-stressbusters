@@ -1,17 +1,17 @@
 /* ── Deck page ── */
-.deck-page{background:var(--bg)}
+.deck-page{background:#fff}
 .deck-intro{padding:clamp(60px,9vw,110px) 0 clamp(36px,5vw,60px);border-bottom:1px solid var(--line)}
-.deck-intro .eyebrow{color:var(--cyan)}
-.deck-intro h1{font-size:clamp(52px,9vw,118px);letter-spacing:-.08em;line-height:.88;margin:14px 0 0;color:#fff}
+.deck-intro .eyebrow{color:#888}
+.deck-intro h1{font-size:clamp(52px,9vw,118px);letter-spacing:-.08em;line-height:.88;margin:14px 0 0;color:#111}
 .deck-intro h1 em{font-style:normal;color:var(--purple)}
-.deck-intro>p:not(.eyebrow){max-width:460px;font-size:18px;line-height:1.4;margin:24px 0 0;color:#aaa}
+.deck-intro>p:not(.eyebrow){max-width:460px;font-size:18px;line-height:1.4;margin:24px 0 0;color:#555}
 
 /* Grid */
 .deck-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:2px;padding-bottom:2px}
 
 /* Tiles */
 .deck-tile{aspect-ratio:7/10;padding:14px;display:flex;flex-direction:column;color:#fff;background-size:cover;background-position:center;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s}
-.deck-tile:hover{transform:translateY(-4px) scale(1.02);z-index:2;box-shadow:0 0 40px rgba(180,0,255,.4)}
+.deck-tile:hover{transform:translateY(-4px) scale(1.02);z-index:2;box-shadow:0 8px 40px rgba(0,0,0,.25)}
 .deck-tile>div{display:flex;justify-content:space-between;font:9px var(--mono);text-transform:uppercase;position:relative;z-index:1}
 .deck-tile>div span{letter-spacing:.1em}
 .deck-tile>div small{color:rgba(255,255,255,.5)}

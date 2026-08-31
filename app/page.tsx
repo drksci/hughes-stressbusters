@@ -13,34 +13,49 @@ export default function Home() {
         </nav>
       </header>
 
+      {/* Hero */}
       <section className="labs-hero shell">
         <p className="eyebrow">Hughesss · Edition 01</p>
-        <h1>Stress Busters.<br /><em>25 cards.</em><br /><strong>No correct answers.</strong></h1>
-        <p>Match the everyday disaster with its wildly impractical rescue. Play it with friends, on a table, after a long week. Someone will win. It won't help.</p>
+        <h1>Stress Busters.<br /><em>No correct answers.</em></h1>
+        <p>Match the everyday disaster with its wildly impractical rescue. 25 cards. Play it with friends, on a table, after a long week.</p>
         <div className="labs-actions">
           <Link className="button" href="/deck">Browse the 25 cards ↗</Link>
           <Link className="text-link" href="/collateral">Publishing Kit →</Link>
         </div>
       </section>
 
-      <section className="deck-preview" aria-label="Card previews">
-        <article className="labs-card labs-card-cover">
-          <span>WILDCARD</span>
-          <h2>ARE YOU<br />AWAKE NOW?</h2>
-          <small>STRESS BUSTERS · EDITION 01</small>
-        </article>
-        <article className="labs-card labs-card-two">
-          <span>BUSTER</span>
-          <h2>Brain Off.<br />Vibes On.</h2>
-          <small>RESCUE · 07</small>
-        </article>
-        <article className="labs-card labs-card-three">
-          <span>STRESS</span>
-          <h2>The Calendar<br />Hydra</h2>
-          <small>CHALLENGE · 11</small>
-        </article>
+      {/* Card mockup hero */}
+      <section className="hero-cards shell">
+        <div className="mockup-stage">
+
+          {/* Cover card */}
+          <div className="mockup-card mockup-stress">
+            <HughesLogotype className="card-logo" />
+            <h2>STRESS<br />BUSTERS!</h2>
+            <img className="card-illustration" src="/stress-busters-illustration.png" alt="Stress Busters cover illustration" />
+            <div className="mockup-footer">ARE YOU AWAKE NOW?</div>
+          </div>
+
+          {/* Buster card */}
+          <div className="mockup-card mockup-buster">
+            <div className="mockup-label">STRESS BUSTERS</div>
+            <img className="card-two-illustration" src="/art-iscream.jpg" alt="I Scream card illustration" />
+            <h2>I<br />SCREAM!</h2>
+            <div className="mockup-footer">A MATCHING GAME FOR UNMATCHED DAYS</div>
+          </div>
+
+          {/* Stress card */}
+          <div className="mockup-card mockup-challenge">
+            <div className="mockup-label">STRESS</div>
+            <img className="card-stress-illustration" src="/art-stress.jpg" alt="Calendar Hydra stress card illustration" />
+            <h2>Calendar<br />Hydra</h2>
+            <div className="mockup-footer">CHALLENGE · 21</div>
+          </div>
+
+        </div>
       </section>
 
+      {/* Koala */}
       <section className="koala-strip shell">
         <img src="/koalas-friends-of-the-koala.jpeg" alt="A koala and joey among eucalyptus leaves" />
         <div>

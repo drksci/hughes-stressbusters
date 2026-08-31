@@ -14,18 +14,20 @@ export default function Collateral() {
         </nav>
       </header>
 
+      {/* Hero */}
       <section className="kit-hero">
         <div className="shell">
-          <p className="eyebrow">A Hughes Publishing Kit — Edition 01</p>
+          <p className="eyebrow">Hughes Publishing Kit — Edition 01</p>
           <h1>Ready to<br /><em>print, pitch,</em><br />and play.</h1>
-          <p className="lede">Everything you need to take Stress Busters from screen to table — print spec, brand system, packaging, and the numbers.</p>
+          <p className="lede">Print spec, brand system, packaging, and the numbers — everything needed to take Stress Busters from screen to table.</p>
           <div className="kit-hero-actions">
             <Link className="button" href="/deck">Browse the 25 cards ↗</Link>
-            <a className="text-link" href="#print-spec">Jump to print spec ↓</a>
+            <a className="text-link" href="#print-spec">See print spec ↓</a>
           </div>
         </div>
       </section>
 
+      {/* Stat strip */}
       <div className="rule-strip stat-strip">
         <div className="rule-grid shell">
           <span>25 cards</span>
@@ -35,11 +37,12 @@ export default function Collateral() {
         </div>
       </div>
 
+      {/* 01 — The Game */}
       <section className="section shell game-intro">
         <div className="game-intro-left">
           <p className="eyebrow">01 / The Game</p>
           <h2>Match the panic.<br />Find the rescue.</h2>
-          <p>Stress Busters is a matching card game about everyday disasters and the wildly impractical ways we deal with them. Fast to learn, satisfying to play, better after a long week.</p>
+          <p>Stress Busters is a matching card game about everyday chaos and the wildly impractical ways we cope with it. Fast to learn, satisfying to play.</p>
           <p>3–6 players · 20 minutes · Fits in a pocket.</p>
         </div>
         <div className="game-intro-right">
@@ -55,7 +58,7 @@ export default function Collateral() {
               <span className="step-num">02</span>
               <div>
                 <strong>Play your Buster</strong>
-                <p>Everyone plays their best rescue card. "Deep Breaths, Dummy." "Delete. Delete. Delete." The wilder the better.</p>
+                <p>Everyone plays their rescue card face-down, then reveals. The wilder the better. Write your own on a blank card.</p>
               </div>
             </div>
             <div className="play-step">
@@ -69,39 +72,69 @@ export default function Collateral() {
         </div>
       </section>
 
+      {/* 02 — Card Mockups: all 4 faces */}
       <section className="section shell">
         <div className="section-heading">
-          <p className="eyebrow">02 / Hi-fi mockups</p>
-          <p className="muted">Direction for a compact, tactile edition.</p>
+          <p className="eyebrow">02 / Card designs</p>
+          <p className="muted">Front, back, game card, and blank stock — 70 × 120 mm.</p>
         </div>
-        <div className="mockup-stage">
+        <div className="mockup-stage mockup-stage-four">
+
+          {/* Cover — front */}
           <div className="mockup-card mockup-stress">
             <HughesLogotype className="card-logo" />
             <h2>STRESS<br />BUSTERS!</h2>
-            <img className="card-illustration" src="/stress-busters-illustration.png" alt="Line drawing of a human face beside a skull" />
+            <img className="card-illustration" src="/stress-busters-illustration.png" alt="Face and skull illustration" />
             <div className="mockup-footer">ARE YOU AWAKE NOW?</div>
           </div>
+
+          {/* Game card — front */}
           <div className="mockup-card mockup-buster">
             <div className="mockup-label">STRESS BUSTERS</div>
-            <img className="card-two-illustration" src="/art-iscream.jpg" alt="I Scream card illustration" />
+            <img className="card-two-illustration" src="/art-iscream.jpg" alt="I Scream card art" />
             <h2>I<br />SCREAM!</h2>
             <div className="mockup-footer">A MATCHING GAME FOR UNMATCHED DAYS</div>
           </div>
+
+          {/* Card back */}
+          <div className="mockup-card mockup-back">
+            <div className="card-back-inner">
+              <div className="card-back-top">
+                <HughesLogotype className="card-logo" />
+              </div>
+              <div className="card-back-lines">
+                <span className="back-label">My Buster:</span>
+                <span className="back-line"></span>
+                <span className="back-sample">Pretend I'm fine…</span>
+                <span className="back-line"></span>
+                <span className="back-sample">Delete everything</span>
+                <span className="back-line"></span>
+              </div>
+              <div className="card-back-footer">
+                <span>STRESS BUSTERS</span>
+                <span>EDITION 01</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Blank card */}
           <div className="mockup-card mockup-blank">
             <div className="mockup-label">STRESS BUSTERS</div>
             <div className="blank-lines"><span></span><span></span><span></span></div>
             <p>WRITE YOUR<br />OWN BUSTER</p>
             <div className="mockup-footer">70 × 120 MM / BLANK STOCK</div>
           </div>
+
         </div>
-        <p className="mockup-caption">Cover · Game card · Blank stock — 70 × 120 mm · 350 gsm uncoated · Rounded corners</p>
+        <p className="mockup-caption">Each card set includes 24 printed cards + 1 blank write-in card · Back side has ruled lines for custom responses</p>
       </section>
 
+      {/* 03 — Print Spec */}
       <section id="print-spec" className="section shell split-section specs">
         <div>
           <p className="eyebrow">03 / Print spec</p>
           <h2>Simple materials.<br />Strong point of view.</h2>
-          <p className="spec-note">Optimised for short-run prototype quantities. Confirmed for offset and digital print.</p>
+          <p className="spec-note">Optimised for short-run prototype quantities of 25–500 units. Confirmed for offset and digital print.</p>
         </div>
         <div className="spec-list">
           <div><span>Format</span><strong>70 × 120 mm · Playing card</strong></div>
@@ -113,6 +146,7 @@ export default function Collateral() {
         </div>
       </section>
 
+      {/* 04 — Packaging */}
       <section className="section shell wireframe-section">
         <div className="section-heading">
           <p className="eyebrow">04 / Packaging</p>
@@ -132,6 +166,7 @@ export default function Collateral() {
         </div>
       </section>
 
+      {/* 05 — Brand */}
       <section className="section shell brand-section">
         <div className="section-heading">
           <p className="eyebrow">05 / Brand system</p>
@@ -145,7 +180,7 @@ export default function Collateral() {
           <div className="brand-type-cell">
             <p className="brand-display-type">Stress Busters!</p>
             <p className="brand-label">Carter One · Display</p>
-            <p className="brand-body-type">Body copy is system sans-serif — neutral, universal, zero print cost.</p>
+            <p className="brand-body-type">Body copy is set in system sans-serif — neutral, universal, zero print cost.</p>
             <p className="brand-label">System sans-serif · Body</p>
           </div>
           <div className="brand-palette-cell">
@@ -160,6 +195,7 @@ export default function Collateral() {
         </div>
       </section>
 
+      {/* 06 — Launch Numbers */}
       <section className="section shell launch-financials">
         <div className="section-heading">
           <p className="eyebrow">06 / Launch numbers</p>
@@ -174,7 +210,7 @@ export default function Collateral() {
           <div>
             <span>Per-deck cost</span>
             <strong>$33</strong>
-            <p>Unit cost before freight. Drops sharply at volume — check with your printer.</p>
+            <p>Unit cost before freight. Drops sharply at volume.</p>
           </div>
           <div>
             <span>Retail target</span>
@@ -189,11 +225,12 @@ export default function Collateral() {
         </div>
         <div className="retail-note">
           <h2>$5 per deck<br />to the koalas.</h2>
-          <p>Every deck sold puts $5 toward the rescue and care work of Friends of the Koala — doing genuinely good things in northern NSW.</p>
+          <p>Every deck sold puts $5 toward the rescue and care work of Friends of the Koala in northern NSW.</p>
           <a className="text-link" href="https://friendsofthekoala.org/" target="_blank" rel="noreferrer">Friends of the Koala ↗</a>
         </div>
       </section>
 
+      {/* Next Steps */}
       <section className="next-steps">
         <div className="shell">
           <p className="eyebrow">Ready to move</p>
@@ -208,13 +245,13 @@ export default function Collateral() {
             <div className="step-card">
               <span className="step-icon">02</span>
               <h3>Share this kit</h3>
-              <p>This page has the game, the brand, the numbers, and the full story. Send it to a co-creator, a stockist, or anyone who should know.</p>
+              <p>This page has the game, the brand, the numbers, and the full story. Send it to a co-creator, stockist, or anyone who should know.</p>
               <a className="text-link" href="https://client-huges-stressbusters.vercel.app/collateral" target="_blank" rel="noreferrer">Copy the link ↗</a>
             </div>
             <div className="step-card">
               <span className="step-icon">03</span>
               <h3>Take it further</h3>
-              <p>A Kickstarter, a gift retailer pitch, a table at a local market. The brand is ready. The game is ready. You're the variable.</p>
+              <p>A Kickstarter, a gift retailer pitch, a local market table. The brand is ready. The game is ready. You're the variable.</p>
               <Link className="text-link" href="/deck">See all 25 cards ↗</Link>
             </div>
           </div>
