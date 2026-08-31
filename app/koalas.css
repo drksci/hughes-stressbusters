@@ -1,0 +1,4 @@
+.koala-section{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--space);align-items:center;padding:clamp(80px,12vw,160px) 0;border-bottom:1px solid var(--line)}
+.koala-copy p:not(.eyebrow){max-width:420px;font-size:20px;line-height:1.3;letter-spacing:-.025em;margin:28px 0}
+.koala-section img{width:100%;height:100%;min-height:350px;object-fit:cover;border-radius:2px}
+@media(max-width:700px){.koala-section{grid-template-columns:1fr}.koala-section img{min-height:260px}.koala-copy p:not(.eyebrow){font-size:18px}}

@@ -3,7 +3,7 @@ import { RootProvider } from "fumadocs-ui/provider/next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Hughes Stress Busters",
+  title: "Hughesss Stress Busters",
   description: "A light-hearted card game for the moments that need a reset.",
 };
 

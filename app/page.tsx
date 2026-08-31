@@ -1,42 +1,12 @@
 import Link from "next/link";
 import { HughesLogotype } from "../components/hughes-logotype";
 
-const pairs = [
-  ["01", "The pitch", "The MD intercepts a hideous TV proposal and sends it to marketing with one note: we need more publicity."],
-  ["02", "Channel Vinnie", "Your friend's cat refuses to do anything he does not want to do. You know the feeling."],
-  ["03", "Take five", "Lock the office door. Do a headstand. Reset the room. The correct response is rarely the obvious one."],
-];
-
 export default function Home() {
-  return (
-    <main>
-      <header className="site-header shell">
-        <Link className="wordmark" href="/"><HughesLogotype className="site-logo" /><span>/ STRESS BUSTERS</span></Link>
-        <nav aria-label="Primary navigation">
-          <Link href="#how-it-works">How it works</Link>
-          <Link href="/collateral">Collateral <span className="arrow">↗</span></Link>
-        </nav>
-      </header>
-
-      <section className="hero shell">
-        <p className="eyebrow">A card game for highly specific emergencies</p>
-        <h1>Turn the pressure<br /><span>into play.</span></h1>
-        <div className="hero-foot">
-          <p className="lede">Stress Busters is a small, satisfying, unstrategic game about matching the moment with the right way out.</p>
-          <div className="hero-actions"><Link className="button" href="#how-it-works">See the rules <span>↓</span></Link><span className="edition">Edition 01<br />Hughes / Brisbane</span></div>
-        </div>
-      </section>
-
-      <section className="rule-strip" aria-label="Game summary"><div className="shell rule-grid"><span>10 cards</span><span>5 pairs</span><span>1 joker</span><span>0 bad ideas</span></div></section>
-
-      <section id="how-it-works" className="section shell split-section">
-        <div><p className="eyebrow">01 / The premise</p><h2>Every problem<br />has a counterpart.</h2></div>
-        <div className="section-copy"><p>Draw a situation. Find its stress buster. Pick up, throw out, and keep moving until all five pairs are down.</p><p>The game is intentionally low stakes: a brunch-table ritual for the particular chaos of work, friends, and the things nobody put in the brief.</p><Link className="text-link" href="/collateral">Explore the physical edition <span>↗</span></Link></div>
-      </section>
-
-      <section className="section shell pair-section"><div className="section-heading"><p className="eyebrow">02 / A few situations</p><p className="muted">The cards are blank until the trouble arrives.</p></div><div className="pair-grid">{pairs.map(([number, title, body]) => <article className="pair-card" key={number}><div className="card-top"><span>{number}</span><span>STRESS CARD</span></div><h3>{title}</h3><p>{body}</p><div className="card-mark">H / SB</div></article>)}</div></section>
-
-      <footer className="footer shell"><p><HughesLogotype className="footer-logo" /><span>/ STRESS BUSTERS</span></p><Link href="/collateral">View collateral ↗</Link><p className="muted">Made for the moment after “I have an idea.”</p></footer>
-    </main>
-  );
+  return <main className="labs-home">
+    <header className="site-header shell"><Link className="wordmark" href="/"><HughesLogotype className="site-logo" /><span>STRESS BUSTERS</span></Link><nav aria-label="Primary navigation"><Link href="/deck">The deck</Link><Link href="/collateral">Collateral</Link></nav></header>
+    <section className="labs-hero shell"><p className="eyebrow">Hughesss presents</p><h1>A small card game<br /><span>for big little stresses.</span></h1><p>Match the everyday nuisance with its wildly impractical rescue. Play it with friends, on a table, after a long week.</p><div className="labs-actions"><Link className="button" href="/deck">Meet the 25 cards <span>↗</span></Link><Link className="text-link" href="/collateral">See print edition ↗</Link></div></section>
+    <section className="deck-preview shell" aria-label="Card previews"><article className="labs-card labs-card-one"><span>STRESS</span><h2>THE<br />INTERNET IMP</h2><small>01 / challenge</small></article><article className="labs-card labs-card-two"><span>BUSTER</span><h2>SIGNAL<br />SHAMAN</h2><small>02 / rescue</small></article><article className="labs-card labs-card-three"><span>STRESS</span><h2>REPLY-ALL<br />DEMON</h2><small>03 / challenge</small></article></section>
+    <section className="koala-strip shell"><img src="/koalas-friends-of-the-koala.jpeg" alt="A koala and joey among eucalyptus leaves" /><div><p className="eyebrow">A little serious bit</p><h2>All proceeds go to Koalas.</h2><p>Every sale supports the rescue and care work of Friends of the Koala.</p><a className="text-link" href="https://friendsofthekoala.org/" target="_blank" rel="noreferrer">Friends of the Koala ↗</a></div></section>
+    <footer className="footer shell"><p><HughesLogotype className="footer-logo" /><span>STRESS BUSTERS</span></p><Link href="/deck">Explore the deck ↗</Link><p className="muted">25 cards / 12 pairs / 1 wildcard</p></footer>
+  </main>;
 }
