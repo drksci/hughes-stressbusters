@@ -1,6 +1,6 @@
 # Hughes Stress Busters
 
-Minimal docs-style landing page and collateral direction for the Hughes Stress Busters card game.
+Minimal docs-style landing page and collateral direction for the Stress Busters card game by Hughes.
 
 ## Local development
 
