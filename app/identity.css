@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Caveat:wght@400;600&display=swap');
 .wordmark{display:flex;align-items:center;gap:9px}
-.site-logo{width:80px;height:32px;overflow:visible;display:block;flex-shrink:0}
-.footer-logo{width:70px;height:32px;vertical-align:middle;overflow:visible}
+.site-logo{width:80px;height:32px;overflow:visible;display:block;flex-shrink:0;transform:translateY(-5px)}
+.footer-logo{width:70px;height:32px;vertical-align:middle;overflow:visible;transform:translateY(-5px)}
 .footer>p:first-child{display:flex;align-items:center;gap:9px}
 .hughes-text{font-family:'Carter One','Arial Rounded MT Bold',Arial,sans-serif;font-size:160px;text-anchor:middle;dominant-baseline:central;letter-spacing:4px}
 .hughes-shadow{fill:#b400ff;stroke:#b400ff;stroke-width:50px;stroke-linejoin:round;stroke-linecap:round;transform:translate(14px,14px)}
