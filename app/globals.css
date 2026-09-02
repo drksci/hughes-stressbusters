@@ -8,6 +8,8 @@
 @import './financials.css';
 @import './collateral/collateral.css';
 :root{--bg:#ffffff;--paper:#ffffff;--ink:#111111;--purple:#9000d4;--cyan:#009eb5;--muted:#999;--line:#ebebeb;--soft:#f5f5f5;--display:Arial,Helvetica,sans-serif;--mono:"SFMono-Regular",Consolas,"Liberation Mono",monospace;--space:clamp(24px,5vw,80px)}
+/* Launch polish: a quiet white frame lets the artwork carry the colour. */
+.site-header{border-bottom:0;height:72px}.site-header nav{gap:14px}.site-header nav a:not(.button){padding:7px 10px}.footer{border-top:0}.section+.section{border-top:0}.rule-strip{border-block:0}.labs-home .mockup-card{box-shadow:0 12px 34px rgba(23,63,168,.14)}
 *{box-sizing:border-box}html,body{margin:0;background:#fff;color:#111;overflow-x:clip}body{font-family:var(--display);font-size:16px;line-height:1.5}
 .shell{width:min(1180px,calc(100% - 48px));margin-inline:auto}
 /* Nav */

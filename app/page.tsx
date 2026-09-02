@@ -16,8 +16,8 @@ export default function Home() {
       {/* Hero */}
       <section className="labs-hero shell">
         <p className="eyebrow">Hughesss · Edition 01</p>
-        <h1>Stress Busters.<br /><em>No correct answers.</em></h1>
-        <p>Match the everyday disaster with its wildly impractical rescue. 25 cards. Play it with friends, on a table, after a long week.</p>
+        <h1>Stress Busters.<br /><em>Laugh first.</em></h1>
+        <p>The funny little matching game for when real life gets weird. Draw a disaster. Match its ridiculous rescue. Feel better, probably.</p>
         <div className="labs-actions">
           <Link className="button" href="/deck">Browse the 25 cards ↗</Link>
           <Link className="text-link" href="/collateral">Publishing Kit →</Link>
@@ -61,7 +61,7 @@ export default function Home() {
         <div>
           <p className="eyebrow">A little serious bit</p>
           <h2>$5 per deck goes to koalas.</h2>
-          <p>Every sale puts $5 toward the rescue and care work of Friends of the Koala — a real charity doing real things in northern NSW.</p>
+          <p>Every sale puts $5 toward the rescue and care work of Friends of the Koala — doing real work for koalas in northern NSW.</p>
           <a className="text-link" href="https://friendsofthekoala.org/" target="_blank" rel="noreferrer">Friends of the Koala ↗</a>
         </div>
       </section>

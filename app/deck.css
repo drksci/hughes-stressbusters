@@ -1,6 +1,6 @@
 /* ── Deck page ── */
 .deck-page{background:#fff}
-.deck-intro{padding:clamp(60px,9vw,110px) 0 clamp(36px,5vw,60px);border-bottom:1px solid #ebebeb}
+.deck-intro{padding:clamp(60px,9vw,110px) 0 clamp(36px,5vw,60px)}
 .deck-intro .eyebrow{color:#888}
 .deck-intro h1{font-size:clamp(52px,9vw,118px);letter-spacing:-.08em;line-height:.88;margin:14px 0 0;color:#111}
 .deck-intro h1 em{font-style:normal;color:var(--purple)}
@@ -16,9 +16,15 @@
   padding:14px 12px 12px;
   display:flex;
   flex-direction:column;
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  background-size:cover,500% auto;
+  background-repeat:no-repeat;
   transition:transform .18s,box-shadow .18s;
   cursor:default;
 }
+.deck-tile::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,18,35,.26) 0%,rgba(8,18,35,0) 40%,rgba(8,18,35,.8) 100%);z-index:-1}
 .deck-tile:hover{transform:translateY(-5px) scale(1.02);z-index:2;box-shadow:0 12px 32px rgba(0,0,0,.13)}
 
 /* Type + number row */
@@ -31,58 +37,52 @@
   letter-spacing:.1em;
   flex-shrink:0;
 }
-.deck-tile>div small{font-weight:400;font-size:8px}
-
-/* Art zone */
-.deck-tile .card-art{
-  flex:1;
-  margin:10px -12px;
-  overflow:hidden;
-}
 
 /* Card title */
 .deck-tile h2{
   font-size:clamp(12px,1.5vw,20px);
   line-height:.95;
-  margin:10px 0 0;
+  margin:auto 0 0;
   letter-spacing:-.04em;
   flex-shrink:0;
   font-weight:900;
 }
 
-/* STRESS tiles — dark card */
+/* All art runs to the edge; titles float in the same lower-grid position. */
 .tile-stress{
-  background:#111;
   color:#fff;
   box-shadow:0 2px 8px rgba(0,0,0,.2);
 }
-.tile-stress>div span{color:rgba(180,0,255,.75)}
-.tile-stress>div small{color:rgba(255,255,255,.3)}
+.tile-stress>div span{color:#fff}
 .tile-stress h2{color:#fff}
-.tile-stress .card-art{background:#1a001f}
 
 /* BUSTER tiles — white card */
 .tile-buster{
-  background:#fff;
-  color:#111;
-  border:1px solid #ebebeb;
+  color:#fff;
+  border:0;
   box-shadow:0 2px 8px rgba(0,0,0,.05);
 }
-.tile-buster>div span{color:#00909e}
-.tile-buster>div small{color:#bbb}
-.tile-buster h2{color:#111}
-.tile-buster .card-art{background:#e8fffe}
+.tile-buster>div span{color:#fff}
+.tile-buster h2{color:#fff}
 
 /* WILD tile */
 .tile-wild{
-  background:#b400ff;
   color:#fff;
   box-shadow:0 2px 12px rgba(180,0,255,.25);
 }
 .tile-wild>div span{color:rgba(255,255,255,.7)}
-.tile-wild>div small{color:rgba(255,255,255,.5)}
 .tile-wild h2{color:#fff}
-.tile-wild .card-art{background:rgba(0,0,0,.15)}
+
+.art-0,.art-1,.art-2,.art-3,.art-4{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/deck-art-light.png')}
+.art-5,.art-6,.art-7,.art-8,.art-9{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/deck-art-light-02.png')}
+.art-10,.art-11,.art-12,.art-13,.art-14{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/deck-art-light-03.png')}
+.art-15,.art-16,.art-17,.art-18,.art-19{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/deck-art-light-04.png')}
+.art-20,.art-21,.art-22,.art-23,.art-24{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/deck-art-light-05.png')}
+.art-0,.art-5,.art-10,.art-15,.art-20{background-position:center,0 center}
+.art-1,.art-6,.art-11,.art-16,.art-21{background-position:center,25% center}
+.art-2,.art-7,.art-12,.art-17,.art-22{background-position:center,50% center}
+.art-3,.art-8,.art-13,.art-18,.art-23{background-position:center,75% center}
+.art-4,.art-9,.art-14,.art-19,.art-24{background-position:center,100% center}
 
 @media(max-width:900px){.deck-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-width:700px){

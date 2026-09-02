@@ -17,7 +17,7 @@ export default function Collateral() {
       {/* Hero */}
       <section className="kit-hero">
         <div className="shell">
-          <p className="eyebrow">Hughes Publishing Kit — Edition 01</p>
+          <p className="eyebrow">Hughesss Publishing Kit — Edition 01</p>
           <h1>Ready to<br /><em>print, pitch,</em><br />and play.</h1>
           <p className="lede">Print spec, brand system, packaging, and the numbers — everything needed to take Stress Busters from screen to table.</p>
           <div className="kit-hero-actions">
@@ -76,7 +76,7 @@ export default function Collateral() {
       <section className="section shell">
         <div className="section-heading">
           <p className="eyebrow">02 / Card designs</p>
-          <p className="muted">Front, back, game card, and blank stock — 70 × 120 mm.</p>
+          <p className="muted">Cover, game card, card back, and write-in card — 70 × 120 mm.</p>
         </div>
         <div className="mockup-stage mockup-stage-four">
 
@@ -138,10 +138,10 @@ export default function Collateral() {
         </div>
         <div className="spec-list">
           <div><span>Format</span><strong>70 × 120 mm · Playing card</strong></div>
-          <div><span>Stock</span><strong>350 gsm uncoated · Natural white</strong></div>
-          <div><span>Finish</span><strong>Black ink · blind deboss · 3 mm rounded corners</strong></div>
+          <div><span>Stock</span><strong>300–350 gsm playing-card stock · Natural white</strong></div>
+          <div><span>Finish</span><strong>Full-colour CMYK · matte laminate · 3 mm rounded corners</strong></div>
           <div><span>Set size</span><strong>25 cards · Tuck box included</strong></div>
-          <div><span>Colours</span><strong>1-colour black inside · Cover: 4-colour process</strong></div>
+          <div><span>Colours</span><strong>Full-colour CMYK throughout</strong></div>
           <div><span>Bleed</span><strong>3 mm all sides · Safe zone 5 mm</strong></div>
         </div>
       </section>
@@ -179,16 +179,16 @@ export default function Collateral() {
           </div>
           <div className="brand-type-cell">
             <p className="brand-display-type">Stress Busters!</p>
-            <p className="brand-label">Carter One · Display</p>
-            <p className="brand-body-type">Body copy is set in system sans-serif — neutral, universal, zero print cost.</p>
+            <p className="brand-label">Bold display · playful utility</p>
+            <p className="brand-body-type">System sans-serif keeps the world clean while the illustrations do the shouting.</p>
             <p className="brand-label">System sans-serif · Body</p>
           </div>
           <div className="brand-palette-cell">
             <div className="swatches">
-              <div className="swatch swatch-ink"><span>#080810</span><span>Void</span></div>
-              <div className="swatch swatch-white"><span>#F0F0FF</span><span>Ghost</span></div>
-              <div className="swatch swatch-red"><span>#B400FF</span><span>Purple</span></div>
-              <div className="swatch swatch-blue"><span>#00E5FF</span><span>Cyan</span></div>
+              <div className="swatch swatch-ink"><span>#173FA8</span><span>Electric blue</span></div>
+              <div className="swatch swatch-white"><span>#FFFDF8</span><span>Paper white</span></div>
+              <div className="swatch swatch-red"><span>#FF5A4F</span><span>Pop coral</span></div>
+              <div className="swatch swatch-blue"><span>#FFD43B</span><span>Sunshine</span></div>
             </div>
             <p className="brand-label">Web palette</p>
           </div>
