@@ -135,17 +135,11 @@ export default function Collateral() {
           <p className="eyebrow">04 / Packaging</p>
           <p className="muted">One tuck box. No visual noise.</p>
         </div>
-        <div className="box-wireframe">
-          <div className="box-top">
-            <HughesLogotype className="box-logo" />
-            <span>SB—01</span>
-          </div>
-          <div className="box-center">
-            <span>STRESS</span>
-            <strong>BUSTERS</strong>
-            <small>25 CARDS · TUCK BOX · EDITION 01</small>
-          </div>
-          <div className="box-side">70 × 120 MM · 350 GSM</div>
+        <div className="tuck-pack" aria-label="Stress Busters tuck pack concept">
+          <div className="tuck-pack-top"><span>HUGHESSS PRESENTS</span><span>SB / 01</span></div>
+          <HughesLogotype className="tuck-pack-logo" />
+          <div className="tuck-pack-title"><span>STRESS</span><strong>BUSTERS!</strong></div>
+          <div className="tuck-pack-bottom"><span>25 CARDS</span><span>70 × 120 MM</span><span>EDITION 01</span></div>
         </div>
       </section>
 
