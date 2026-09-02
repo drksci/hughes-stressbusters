@@ -71,13 +71,13 @@ h2{font-size:clamp(32px,5vw,60px);line-height:.96;letter-spacing:-.055em;margin:
 .spec-list strong{font-weight:400;color:#111}
 /* Tuck pack concept — one-colour Electric Blue on Paper White. */
 .wireframe-section{padding-bottom:clamp(60px,10vw,140px)}
-.tuck-pack{width:min(100%,410px);aspect-ratio:7/12;margin:0 auto;background:#fffdf8;color:#173fa8;border:2px solid #173fa8;box-shadow:14px 14px 0 #ffd43b;display:grid;grid-template-rows:auto 1fr auto auto;padding:18px;overflow:hidden}
+.tuck-pack{width:min(100%,410px);aspect-ratio:7/12;margin:0 auto;background:#fff;color:#111;border:2px solid #111;box-shadow:12px 12px 0 #d8d8d8;display:grid;grid-template-rows:auto 1fr auto auto;padding:18px;overflow:hidden}
 .tuck-pack-top,.tuck-pack-bottom{font:700 9px var(--mono);letter-spacing:.11em;display:flex;justify-content:space-between;gap:8px}
-.tuck-pack-logo{width:100%;height:clamp(75px,13vw,120px);filter:grayscale(1) contrast(1.7);align-self:center;overflow:visible}
+.tuck-pack-logo{width:92%;height:clamp(75px,13vw,120px);filter:grayscale(1) contrast(1.7);justify-self:center;align-self:center;overflow:visible}
 .tuck-pack-title{align-self:center;display:flex;flex-direction:column;line-height:.78;letter-spacing:-.09em}
 .tuck-pack-title span{font:700 clamp(32px,6vw,58px) var(--display)}
 .tuck-pack-title strong{font:900 clamp(58px,11vw,106px) var(--display)}
-.tuck-pack-bottom{border-top:2px solid #173fa8;padding-top:12px;flex-wrap:wrap}
+.tuck-pack-bottom{border-top:2px solid #111;padding-top:12px;flex-wrap:wrap}
 /* Footer */
 .footer{border-top:1px solid var(--line);padding:28px 0 60px;display:grid;grid-template-columns:1fr auto 1fr;gap:20px;font:11px var(--mono);align-items:center}
 .footer p{margin:0;display:flex;align-items:center;gap:10px;color:#111}
@@ -106,6 +106,6 @@ h2{font-size:clamp(32px,5vw,60px);line-height:.96;letter-spacing:-.055em;margin:
   .mockup-card h2{font-size:clamp(16px,5.5vw,30px)}
   .mockup-footer,.mockup-label{font-size:6px}
   .spec-list>div{grid-template-columns:120px 1fr}
-  .tuck-pack{width:min(100%,300px);padding:14px;box-shadow:9px 9px 0 #ffd43b}
+  .tuck-pack{width:min(100%,300px);padding:14px;box-shadow:8px 8px 0 #d8d8d8}
   .tuck-pack-top,.tuck-pack-bottom{font-size:7px}
 }

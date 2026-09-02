@@ -137,7 +137,7 @@ export default function Collateral() {
         </div>
         <div className="tuck-pack" aria-label="Stress Busters tuck pack concept">
           <div className="tuck-pack-top"><span>HUGHESSS PRESENTS</span><span>SB / 01</span></div>
-          <HughesLogotype className="tuck-pack-logo" />
+          <HughesLogotype className="tuck-pack-logo" viewBox="360 30 600 280" />
           <div className="tuck-pack-title"><span>STRESS</span><strong>BUSTERS!</strong></div>
           <div className="tuck-pack-bottom"><span>25 CARDS</span><span>70 × 120 MM</span><span>EDITION 01</span></div>
         </div>

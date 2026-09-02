@@ -19,7 +19,7 @@
   position:relative;
   isolation:isolate;
   overflow:hidden;
-  background-size:cover,500% auto;
+  background-size:cover,cover;
   background-repeat:no-repeat;
   transition:transform .18s,box-shadow .18s;
   cursor:default;
@@ -73,16 +73,7 @@
 .tile-wild>div span{color:rgba(255,255,255,.7)}
 .tile-wild h2{color:#fff}
 
-.art-0,.art-1,.art-2,.art-3,.art-4{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/deck-art-light.png')}
-.art-5,.art-6,.art-7,.art-8,.art-9{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/deck-art-light-02.png')}
-.art-10,.art-11,.art-12,.art-13,.art-14{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/deck-art-light-03.png')}
-.art-15,.art-16,.art-17,.art-18,.art-19{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/deck-art-light-04.png')}
-.art-20,.art-21,.art-22,.art-23,.art-24{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/deck-art-light-05.png')}
-.art-0,.art-5,.art-10,.art-15,.art-20{background-position:center,0 center}
-.art-1,.art-6,.art-11,.art-16,.art-21{background-position:center,25% center}
-.art-2,.art-7,.art-12,.art-17,.art-22{background-position:center,50% center}
-.art-3,.art-8,.art-13,.art-18,.art-23{background-position:center,75% center}
-.art-4,.art-9,.art-14,.art-19,.art-24{background-position:center,100% center}
+.art-0{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/cards/card-01.png')}.art-1{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/cards/card-02.png')}.art-2{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/cards/card-03.png')}.art-3{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/cards/card-04.png')}.art-4{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/cards/card-05.png')}.art-5{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/cards/card-06.png')}.art-6{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/cards/card-07.png')}.art-7{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/cards/card-08.png')}.art-8{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/cards/card-09.png')}.art-9{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/cards/card-10.png')}.art-10{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/cards/card-11.png')}.art-11{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/cards/card-12.png')}.art-12{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/cards/card-13.png')}.art-13{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/cards/card-14.png')}.art-14{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/cards/card-15.png')}.art-15{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/cards/card-16.png')}.art-16{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/cards/card-17.png')}.art-17{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/cards/card-18.png')}.art-18{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/cards/card-19.png')}.art-19{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/cards/card-20.png')}.art-20{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/cards/card-21.png')}.art-21{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/cards/card-22.png')}.art-22{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/cards/card-23.png')}.art-23{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/cards/card-24.png')}.art-24{background-image:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.08)),url('/cards/card-25.png')}
 
 @media(max-width:900px){.deck-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-width:700px){
