@@ -30,7 +30,7 @@ export default function Home() {
 
           {/* Cover card */}
           <div className="mockup-card mockup-stress">
-            <HughesLogotype className="card-logo" />
+            <HughesLogotype className="card-logo" preserveAspectRatio="xMinYMid meet" />
             <h2>STRESS<br />BUSTERS!</h2>
             <img className="card-illustration" src="/stress-busters-illustration.png" alt="Stress Busters cover illustration" />
             <div className="mockup-footer">ARE YOU AWAKE NOW?</div>

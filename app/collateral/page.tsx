@@ -82,7 +82,7 @@ export default function Collateral() {
 
           {/* Cover — front */}
           <div className="mockup-card mockup-stress">
-            <HughesLogotype className="card-logo" />
+            <HughesLogotype className="card-logo" preserveAspectRatio="xMinYMid meet" />
             <h2>STRESS<br />BUSTERS!</h2>
             <img className="card-illustration" src="/stress-busters-illustration.png" alt="Face and skull illustration" />
             <div className="mockup-footer">ARE YOU AWAKE NOW?</div>
