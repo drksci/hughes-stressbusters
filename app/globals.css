@@ -102,8 +102,9 @@ h2{font-size:clamp(32px,5vw,60px);line-height:.96;letter-spacing:-.055em;margin:
   .pair-grid{grid-template-columns:1fr}
   .footer{grid-template-columns:1fr 1fr}
   .footer .muted{grid-column:1/-1;text-align:left}
-  .mockup-stage{gap:10px}
-  .mockup-card{width:29vw;min-width:0;padding:10px;border-radius:9px}
+  .mockup-stage{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .mockup-card{width:100%;min-width:0;padding:10px;border-radius:9px}
+  .mockup-stage .mockup-stress{grid-column:1/-1;width:min(62vw,260px);justify-self:center}
   .mockup-card h2{font-size:clamp(16px,5.5vw,30px)}
   .mockup-footer,.mockup-label{font-size:6px}
   .spec-list>div{grid-template-columns:120px 1fr}

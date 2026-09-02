@@ -37,19 +37,17 @@ export default function Home() {
           </div>
 
           {/* Buster card */}
-          <div className="mockup-card mockup-buster">
-            <div className="mockup-label">STRESS BUSTERS</div>
-            <img className="card-two-illustration" src="/art-iscream.jpg" alt="I Scream card illustration" />
-            <h2>I<br />SCREAM!</h2>
-            <div className="mockup-footer">A MATCHING GAME FOR UNMATCHED DAYS</div>
+          <div className="mockup-card mockup-art mockup-art-signal">
+            <div className="mockup-label">BUSTER</div>
+            <h2>The Signal<br />Shaman</h2>
+            <div className="mockup-footer">WIFI, RESTORED</div>
           </div>
 
           {/* Stress card */}
-          <div className="mockup-card mockup-challenge">
+          <div className="mockup-card mockup-art mockup-art-calendar">
             <div className="mockup-label">STRESS</div>
-            <img className="card-stress-illustration" src="/art-stress.jpg" alt="Calendar Hydra stress card illustration" />
             <h2>Calendar<br />Hydra</h2>
-            <div className="mockup-footer">CHALLENGE · 21</div>
+            <div className="mockup-footer">TOO MANY TUESDAYS</div>
           </div>
 
         </div>

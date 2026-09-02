@@ -13,14 +13,6 @@
 .hero-cards{padding:clamp(60px,9vw,120px) 0}
 .hero-cards .mockup-stage{padding:0}
 
-/* Third card — stress variant */
-.mockup-challenge{background:#faf5ff;border:1px solid rgba(180,0,255,.25);transform:rotate(5deg);position:relative;overflow:hidden}
-.mockup-challenge .card-stress-illustration{position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover;opacity:.4;mix-blend-mode:luminosity}
-.mockup-challenge .mockup-label,.mockup-challenge h2,.mockup-challenge .mockup-footer{position:relative;z-index:1}
-.mockup-challenge .mockup-label{color:var(--purple);font:10px var(--mono);letter-spacing:.1em}
-.mockup-challenge h2{color:#111;margin-top:auto}
-.mockup-challenge .mockup-footer{color:#999;font:8px var(--mono);margin-top:18px}
-
 /* Koala strip */
 .koala-strip{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,7vw,100px);align-items:center;padding:clamp(80px,12vw,160px) 0}
 .koala-strip img{width:100%;height:380px;object-fit:cover;border-radius:2px;filter:grayscale(.3) contrast(1.05)}
@@ -31,10 +23,11 @@
 
 @media(max-width:700px){
   .labs-actions{flex-direction:column;align-items:flex-start;gap:14px}
-  .hero-cards .mockup-stage{gap:10px}
-  .hero-cards .mockup-card{width:28vw;min-width:0;padding:9px}
-  .hero-cards .mockup-card h2{font-size:clamp(14px,5.5vw,26px)}
-  .hero-cards .mockup-footer,.hero-cards .mockup-label{font-size:5px}
+  .hero-cards .mockup-stage{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;align-items:end}
+  .hero-cards .mockup-card{width:100%;min-width:0;padding:11px}
+  .hero-cards .mockup-card:first-child{grid-column:1/-1;width:min(62vw,260px);justify-self:center}
+  .hero-cards .mockup-card h2{font-size:clamp(18px,6vw,28px)}
+  .hero-cards .mockup-footer,.hero-cards .mockup-label{font-size:6px}
   .koala-strip{grid-template-columns:1fr;gap:32px}
   .koala-strip img{height:260px}
 }

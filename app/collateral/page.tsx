@@ -88,45 +88,27 @@ export default function Collateral() {
             <div className="mockup-footer">ARE YOU AWAKE NOW?</div>
           </div>
 
-          {/* Game card — front */}
-          <div className="mockup-card mockup-buster">
-            <div className="mockup-label">STRESS BUSTERS</div>
-            <img className="card-two-illustration" src="/art-iscream.jpg" alt="I Scream card art" />
-            <h2>I<br />SCREAM!</h2>
-            <div className="mockup-footer">A MATCHING GAME FOR UNMATCHED DAYS</div>
+          {/* Game cards — full bleed */}
+          <div className="mockup-card mockup-art mockup-art-email">
+            <div className="mockup-label">BUSTER</div>
+            <h2>Email<br />Exterminator</h2>
+            <div className="mockup-footer">DELETE. DELETE. DELETE.</div>
           </div>
 
-          {/* Card back */}
-          <div className="mockup-card mockup-back">
-            <div className="card-back-inner">
-              <div className="card-back-top">
-                <HughesLogotype className="card-logo" />
-              </div>
-              <div className="card-back-lines">
-                <span className="back-label">My Buster:</span>
-                <span className="back-line"></span>
-                <span className="back-sample">Pretend I'm fine…</span>
-                <span className="back-line"></span>
-                <span className="back-sample">Delete everything</span>
-                <span className="back-line"></span>
-              </div>
-              <div className="card-back-footer">
-                <span>STRESS BUSTERS</span>
-                <span>EDITION 01</span>
-              </div>
-            </div>
+          <div className="mockup-card mockup-art mockup-art-kraken">
+            <div className="mockup-label">STRESS</div>
+            <h2>Lost Key<br />Kraken</h2>
+            <div className="mockup-footer">IT HAS THEM. OBVIOUSLY.</div>
           </div>
 
-          {/* Blank card */}
-          <div className="mockup-card mockup-blank">
-            <div className="mockup-label">STRESS BUSTERS</div>
-            <div className="blank-lines"><span></span><span></span><span></span></div>
-            <p>WRITE YOUR<br />OWN BUSTER</p>
-            <div className="mockup-footer">70 × 120 MM / BLANK STOCK</div>
+          <div className="mockup-card mockup-art mockup-art-owl">
+            <div className="mockup-label">BUSTER</div>
+            <h2>Oratory<br />Owl</h2>
+            <div className="mockup-footer">SAY THE THING.</div>
           </div>
 
         </div>
-        <p className="mockup-caption">Each card set includes 24 printed cards + 1 blank write-in card · Back side has ruled lines for custom responses</p>
+        <p className="mockup-caption">Every face runs edge-to-edge · 24 illustrated cards + 1 write-in card in every set</p>
       </section>
 
       {/* 03 — Print Spec */}
@@ -143,6 +125,7 @@ export default function Collateral() {
           <div><span>Set size</span><strong>25 cards · Tuck box included</strong></div>
           <div><span>Colours</span><strong>Full-colour CMYK throughout</strong></div>
           <div><span>Bleed</span><strong>3 mm all sides · Safe zone 5 mm</strong></div>
+          <div className="print-quote"><span>Vendor quote</span><strong><a href="https://www.eprintonline.com.au/" target="_blank" rel="noreferrer">ePrint Online ↗</a><br /><a href="/eprint-product-estimate.pdf" download>Download the supplied product estimate (PDF) ↓</a></strong></div>
         </div>
       </section>
 

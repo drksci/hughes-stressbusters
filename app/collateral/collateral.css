@@ -27,6 +27,7 @@
 
 /* ── Print spec ── */
 .spec-note{font-size:15px;line-height:1.5;color:var(--muted);margin:18px 0 0;max-width:340px}
+.print-quote strong{line-height:1.75}.print-quote a{color:var(--purple);text-decoration:none}.print-quote a:hover{text-decoration:underline}
 .split-section{align-items:start}
 
 /* ── Box / packaging ── */

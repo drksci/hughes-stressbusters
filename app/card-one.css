@@ -4,14 +4,24 @@
 .mockup-stress h2{font-size:clamp(22px,3vw,44px);margin:auto 0 0;line-height:.88;color:#fff;position:relative;z-index:1}
 .mockup-stress .mockup-footer{margin-top:0;color:rgba(255,255,255,.5);position:relative;z-index:1}
 .mockup-stress .mockup-label{position:relative;z-index:1;color:rgba(255,255,255,.4)}
-.card-illustration{position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover;margin:0;opacity:.5;mix-blend-mode:luminosity}
+.card-illustration{position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover;margin:0;opacity:1;mix-blend-mode:normal}
 
 /* ── Buster card (mockup-buster) ── */
 .mockup-buster{position:relative;overflow:hidden;background:#fff;border:1px solid #e0e0e0 !important;color:#111;padding:0 !important}
 .mockup-buster .mockup-label{position:relative;z-index:1;padding:14px 14px 0;color:#888;font:900 10px var(--mono);letter-spacing:.08em}
 .mockup-buster h2{color:#111;position:relative;z-index:1;padding:0 14px;margin-top:auto}
 .mockup-buster .mockup-footer{color:#999;position:relative;z-index:1;padding:0 14px 14px;font:900 8px var(--mono);margin-top:10px}
-.card-two-illustration{position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover;margin:0;opacity:.18}
+.mockup-art{position:relative;overflow:hidden;border:0 !important;color:#fff;padding:14px !important;background-repeat:no-repeat;background-size:500% auto;box-shadow:0 12px 36px rgba(23,63,168,.18)}
+.mockup-art::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,18,35,.2),rgba(8,18,35,0) 42%,rgba(8,18,35,.82));z-index:0}
+.mockup-art .mockup-label,.mockup-art h2,.mockup-art .mockup-footer{position:relative;z-index:1;color:#fff;padding:0}
+.mockup-art .mockup-label{font:900 10px var(--mono);letter-spacing:.1em}
+.mockup-art h2{font-size:clamp(20px,3vw,40px);margin:auto 0 0;line-height:.88}
+.mockup-art .mockup-footer{font:900 8px var(--mono);margin-top:10px;letter-spacing:.05em;color:rgba(255,255,255,.76)}
+.mockup-art-signal{background-image:url('/deck-art-light.png');background-position:25% center;transform:translateY(-20px) rotate(3deg)}
+.mockup-art-calendar{background-image:url('/deck-art-light-05.png');background-position:50% center;transform:rotate(5deg)}
+.mockup-art-email{background-image:url('/deck-art-light-02.png');background-position:0 center;transform:translateY(-20px) rotate(3deg)}
+.mockup-art-kraken{background-image:url('/deck-art-light-03.png');background-position:50% center;transform:rotate(4deg)}
+.mockup-art-owl{background-image:url('/deck-art-light-04.png');background-position:100% center;transform:rotate(6deg)}
 
 /* ── Card back ── */
 .mockup-back{background:#f8f8f8;border:1px solid #e0e0e0 !important;transform:rotate(4deg);padding:0 !important;overflow:hidden}
